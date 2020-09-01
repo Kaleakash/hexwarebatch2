@@ -1,0 +1,1469 @@
+
+		Java Training - 
+
+
+	What is Java. 
+
+	Java is platform independent and pure object oriented programming language. 
+
+	Pascal
+	Colol 
+	C
+	Fortan 
+
+	OOPs 
+
+	#include<stdio.h>
+
+	function xyz() {
+		mno();
+	}
+
+	function abc(int a, int b) {
+		xyz();
+
+	}
+
+	void main() {
+		abc(100,200);
+	}
+
+	OOPs 
+
+	object :	object is any real world entity or object is instance of class. 
+ 
+			properties or state 	have 		variables/fields int/float/char/string
+	person 
+			behaviour 		do/does 	functions/methods 
+
+					sleeping(), talking(), walking() etc 
+	place 
+	bank 
+	animal 
+	car 
+
+	etc 
+
+	class :	blue print of object or template of object. 
+
+	C + OOPs = C++ or C with classes 
+
+
+	java developed in Nov 1995. Initial name of the java is Oak.
+	It was belong to Sun microsystem now part of oracle. 
+
+	James Gosling. 
+
+	Features :
+	1. Simple : Pointer, structure, operator overloading, virutal, friend, memory management etc 
+		JVM 
+	2. Pure object oriented programming language. 
+	3. Platform independent programming language: bytecode. 
+	4. compiler and interpreter 
+	
+
+	class syntax 
+
+
+	class classname {	Demo, demo, abc, Abc
+		fields;
+		methods;
+	}
+
+	class follow pascal naming rules. 
+
+	Demo 
+	Employee 
+	Manager 
+	Test 
+	EmployeeDetails 
+	
+	ManagerInfo 
+
+	notepad, eclipse 
+
+
+	Welcome program 
+
+	class Demo {
+		public static void main(String args[]) {
+		System.out.println("Welcome to Java");
+		}
+	}
+
+
+
+	Data Types 
+
+	primitive data types : it is use to store only value  
+		
+	8 types 
+	1. byte 	1
+	2. short 	2
+	3. int 		4
+	4. long 	8	without decimal 
+			
+	5. float 	4
+	6. double	8
+				with decimal  
+	7. char 	2	any single character 
+	8. boolean 	1 bit	true or false 
+	
+	non primitive data types or reference data types : value as well as reference of 
+	another data type. 
+	1. array 
+	2. class (pre-defined/user-defined)
+	3. interface 
+	4. enum 
+
+	
+	Data types example 
+
+	class Demo {
+	public static void main(String args[]) {
+	int a=10;
+	char c ='%';
+	boolean res = true;	
+
+	System.out.println(a);
+	System.out.println(c);
+	System.out.println(res);
+	System.out.println("Value of a is "+a);
+	System.out.println(10+20);
+	System.out.println("10"+20);
+	System.out.println(10+"20");
+	}
+
+	}
+
+	
+	type cassting : converting one data type to another data type 
+	1. implicit 
+	2. explicit 
+
+	int family 
+
+		-------------->implicit ----------------------->
+
+		byte		short		int 		long 
+
+		<--------------explicit -----------------------
+
+	type casting example 
+
+	class Demo {
+	public static void main(String args[]) {
+	byte a=10;
+	short b=a;
+	System.out.println(a);
+	System.out.println(b);
+
+	short c =10;
+	byte d = (byte)c;	// (type)variableName
+	System.out.println(c);
+	System.out.println(d);	
+	}
+
+	}
+
+
+	
+	int ----> float ----------> implicit 
+
+	float -------->int ---------->explicit 
+
+	Operators 
+
+	if statement 
+		simple if 
+		if else 
+		nested if 
+			if ladder or if else if 
+	switch 
+	looping 
+		while loop 
+		do while loop
+		for loop 
+
+	for each loop or enhanced loop 
+
+	if else if 
+
+	class Demo {
+	public static void main(String args[]) {
+	int avg=92;
+	if(avg>90){
+		System.out.println("A+");
+	}else if(avg>80) {
+		System.out.println("A");
+
+	}else if(avg>75) {
+		System.out.println("B");
+
+	}else {
+		System.out.println("C");
+	}	
+	}
+
+}
+
+	while loop 
+
+	class Demo {
+	public static void main(String args[]) {
+		int i=1,n=10;
+		while(i<=n) {
+			System.out.println(i);
+			i++;
+		}	
+	}
+
+}
+
+do while loop 
+
+class Demo {
+	public static void main(String args[]) {
+		int i=1,n=10;
+		do{
+			System.out.println(i);
+			i++;
+		}while(i>=n); 	
+	}
+
+}
+
+for loop 
+
+class Demo {
+	public static void main(String args[]) {
+		for(int i=0;i<=10;i++){
+			System.out.println(i);
+		}	
+	}
+
+}
+
+array : it is use to store more than one value of same type. 
+
+syntax 
+
+	dataType arrayName[];
+
+	int abc[];		java 
+
+	int abc[10];		C/C++	
+
+
+	int []abc;
+
+	for each loop 
+
+	syntax 
+
+	for(dataType variableName : arrayName/collectionClass) {
+
+	}
+
+
+class Demo {
+	public static void main(String args[]) {
+		int []abc;
+		int []xyz={1,2,3,4,5,6,7};
+		System.out.println(xyz[0]);
+		System.out.println(xyz[1]);
+		System.out.println("for loop");
+		for(int i=0;i<xyz.length;i++) {
+			System.out.println(xyz[i]);
+		}
+		System.out.println("using loop each loop");
+		for(int a:xyz) {
+			System.out.println(a);
+		}
+	}
+
+}
+
+	syntax to create the memory size for array 
+
+	dataType arrayName[]= new dataType[size];
+
+	int []abc  = new int[10];
+
+	
+
+class Demo {
+	public static void main(String args[]) {
+		int []abc=new int[10];
+		int n=100;
+		for(int i=0;i<abc.length;i++) {
+			abc[i]=n++;
+		}
+		System.out.println("Display data");
+		for(int a:abc) {
+			System.out.println(a);
+		}
+	}
+
+}
+
+
+OOPs using Java 
+
+object :
+
+class :
+
+
+		wheel, color, price 
+Car 
+		start(), appliedGear(), moving(), stop()
+
+	OOPs Example 
+
+	class Car {
+	int wheel;
+	String color;
+	float price;
+	void start() {
+		System.out.println("Car Start");
+	}
+	void appliedGear() {
+
+	}
+	void moving() {
+
+	}
+	void stop() {
+		System.out.println("Car stop");
+	}
+}
+
+class CarTest {
+	public static void main(String args[]) {
+	System.out.println("Main method");	
+	//start();
+	//className objectReference = new ClassName();
+	Car santro = new Car();
+	santro.start();
+	santro.stop();
+	}
+}
+
+Types of variables / fields 
+
+	3 types 
+
+	1. instance variable 
+		a. The variable which declare outside a method including main method 
+		is known as instance variable. 
+		b. Then instance variable hold default value according their data types. 
+			int family --0
+			float family --0.0
+			char --space 
+			boolean - false
+			String - null
+		c. The instance variable we can use directly inside a method 
+		but the method must part of same class as well as it must be non static method. 
+	2. local variable 
+		a. The variable which declare inside a method including main  method is known 
+			as local variable. 
+		b. local variable doesn't hold default value. 
+		c. the scope of the variable within that block where it declare. 
+	
+	3. static variable 
+
+
+instance and local variable with set and get value 
+class Car {
+	int wheel;
+	String color;
+	float price;
+	void carInfo() {
+		int temp=100;
+		System.out.println("Wheel "+wheel);
+		System.out.println("Color "+color);
+		System.out.println("Price "+price);
+		System.out.println("Temp "+temp);
+	}	
+}
+
+class CarTest {
+	public static void main(String args[]) {
+	Car santro = new Car();
+	santro.carInfo();
+	santro.wheel =4;
+	santro.color="White";
+	santro.price = 850000;
+	santro.carInfo();
+	System.out.println("Color is "+santro.color);	
+	}
+}
+
+Creating more than one object. 
+
+class Car {
+	int wheel;
+	String color;
+	float price;
+	void carInfo(String name) {
+		System.out.println("Car Info "+name);
+		System.out.println("Wheel "+wheel);
+		System.out.println("Color "+color);
+		System.out.println("Price "+price);
+	}	
+}
+
+class CarTest {
+	public static void main(String args[]) {
+	Car santro = new Car();
+	santro.wheel =4;
+	santro.color="White";
+	santro.price = 850000;
+	santro.carInfo("Santro");
+	
+	Car innova = new Car();
+	innova.wheel =4;
+	innova.color="Gray";
+	innova.price = 1400000;
+	innova.carInfo("Innova");
+	}
+}
+
+
+Constructor : It is a type of special method which help to create the memory. 
+
+Pts
+1. Constructor have same name as class itself. 
+2. Constructor doesn't contains return type not even void also. 
+3. Constructor no need to call it will call automatically when we create the objects. 
+
+Method Name always follow camel naming rules. 
+1. if method contains one word the name must be in lower case. 
+2. If method contains more than one word then 2nd word onward each word first letter upper case. 
+
+camel naming rule apply for variable also. 
+
+
+constructor example 
+
+
+class Car {
+
+	Car() {
+		System.out.println("Car object created...");
+	}
+	
+	void carInfo() {
+		System.out.println("Car method");
+	}	
+}
+
+class CarTest {
+	public static void main(String args[]) {
+	Car santro = new Car();
+	santro.carInfo();	
+	}
+}
+	
+class Car {
+
+	Car() {
+		System.out.println("Car object created...");
+	}
+	
+	void carInfo() {
+		System.out.println("Car method");
+	}	
+}
+
+class CarTest {
+	public static void main(String args[]) {
+	Car santro = new Car();
+	santro.carInfo();
+	santro.carInfo();
+	
+	Car innova = new Car();
+	innova.carInfo();
+	innova.carInfo();
+	innova.carInfo();	
+	}
+}
+
+Parameterized constructor. 
+
+this is keyword which refer to current object. 
+
+class Employee {
+	String name;
+	float salary;
+	Employee() {
+		name = "Unknown";
+		salary =8000;
+	}
+	Employee(String name, float salary) {
+		//name = name;	//localVariable = localVariable
+		//salary = salary;
+		this.name = name;
+		this.salary = salary;
+	}
+	void setName(String name) {
+		this.name = name;
+	}
+	void setSalary(float salary) {
+		this.salary = salary;
+	}
+	void displayInfo() {
+		System.out.println("Name is "+name);
+		System.out.println("Salary is "+salary);
+	}
+}
+
+class Test {
+	public static void main(String args[]) {
+	Employee emp1 = new Employee();
+	emp1.displayInfo();		
+
+	Employee emp2 = new Employee("Ravi",12000);
+	emp2.displayInfo();
+
+	Employee emp3 = new Employee("Ramu",12000);
+	emp3.setSalary(20000);
+	emp3.displayInfo();	
+	}
+}
+
+
+Encapsulation : Binding or wrapping data(varibles) and code(methods) in a single unit is known as Encapsulation. 
+
+class :
+
+class Employee {
+	private String name;
+	private float salary;
+	void setInfo(String name, float salary) {
+		this.name = name;
+		//this.salary = salary;
+		if(salary<0) {
+		this.salary = 8000;
+		}else {
+		this.salary = salary;
+		}
+	}
+	void displayInfo() {
+		System.out.println("Name is "+name);
+		System.out.println("Salary is "+salary);
+	}
+}
+
+class Test {
+	public static void main(String args[]) {
+	Employee emp1 = new Employee();
+	//emp1.name="Ravi";
+	//emp1.salary = -12000;	
+	emp1.setInfo("Ravi",-12000);
+	emp1.displayInfo();		
+	}
+}
+
+
+Inheritance : It is ues to inherits or acquire the properties and behaviour of old class to new class. 
+
+class OldClass {			super class, base class, parent class 
+	fields;
+	methods;
+}
+
+class NewClass extends OldClass{	sub class, derived class, child class. 
+	fields;
+	methods;
+}
+
+class A {
+	void dis1() {
+		System.out.println("A class method");
+	}
+}
+class B extends A{
+	void dis2() {
+		System.out.println("B class method");
+	}
+}
+class Test {
+	public static void main(String args[]) {
+	A obj1 = new A();
+	obj1.dis1();
+		
+	B obj2 = new B();
+	obj2.dis2();
+	obj2.dis1();			
+	}
+}
+
+
+Types of inheritnace 
+
+1. Single Inheritance : One super class and one sub class 
+
+class A {}
+class B extends A {}
+
+2. Multilevel Inheritance : One super class and n number of sub class connected one by one 
+
+class A {}
+class B extends A {}
+class C extends B {}
+class D extendds C {}
+
+3. Hierarchical Inheritance : One super class and n number of sub class connected directly to super class. 
+class A {}
+class B extends A {}
+class C extends A {}
+class D extends A {}
+
+4. Multiple Inheritance : More than one super class and n sub class 
+class A {}
+class B{}
+class C extends A,B{	}		Java doesn't support this type of inheritance. 
+In java this type of inheritance we can achieve using interface. 
+
+	OOPs Relationship 
+
+				Manager is a Employee  
+				Employee has a Address 
+
+class Employee {
+	id,name,salary 
+	Address add;
+			read() {}
+			calSalary() {}
+			display() {}
+}
+class Manager extends Employee{
+	numberOfEmp;
+}
+class Programmer extends Employee{
+	projectName;
+}
+class Address {
+	city,state,pinCode
+
+
+Inheritance Example 
+
+class Bike {
+	void speed(){
+		System.out.println("60km/hr");
+	}
+}
+class Pulsar extends Bike {
+	void color() {
+		System.out.println("REd");
+	}
+}
+class HeroHonda extends Bike {
+	void color() {
+		System.out.println("Black");
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Pulsar pu = new Pulsar();
+	pu.speed();		pu.color();
+	HeroHonda hh = new HeroHonda();
+	hh.speed();		hh.color();
+	}
+}
+
+
+Polymorphism : One name many forms or many implementation. 
+
+			Java 
+	Compile time 			Run time 
+
+	static binding 			dynamic binding 
+
+	early binding 			late binding 
+
+	Method Overloading 		Method Overriding 
+
+	Method : The method have same name different parameter list(number of parameter as well as type of parameter)
+	must be different is known as Method Overloading. 
+
+Method Overloading example 
+
+class Operation {
+	void add(int x, int y) {
+		System.out.println(x+y);		
+	}
+	void add(int x, int y, int z) {
+		System.out.println(x+y+z);
+	}
+	void add(float x, float y) {
+		System.out.println(x+y);
+	}
+	void add(String s1, String s2) {
+		System.out.println(s1+s2);
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Operation op = new Operation();
+	op.add(1,2);
+	op.add(10.0f,20.0f);	
+	op.add(1,2,3);
+	op.add("10","20");
+	}
+}
+
+Method Overriding : The method have same name and same method signature (number of parameter list, type of parameter list 
+as well as return type must be same).
+
+To achieve the method overrding class must in Inheritance. 
+
+
+Method Overriding : 
+
+class Bike {
+	void speed(){
+		System.out.println("60km/hr");
+	}
+}
+class Pulsar extends Bike {
+	void speed(){
+		System.out.println("90km/hr");//method Overriding 
+	}
+	void color() {
+		System.out.println("REd");	
+	}
+}
+class HeroHonda extends Bike {
+	void color() {
+		System.out.println("Black");
+	}					//re -usability of speed()
+}
+class Tvs extends Bike {
+	void speed(){
+		super.speed();		//to call super class speed() method like a merge coding.
+		System.out.println("20km/hr");
+	}
+	void color() {
+		System.out.println("Gray");
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Pulsar pu = new Pulsar();		HeroHonda hh = new HeroHonda();
+	pu.color();		pu.speed();	hh.color();		hh.speed();
+	Tvs tv = new Tvs();	tv.speed();	tv.color();	
+	}
+}
+
+abstract : abstract is a keyword we can use with method and class but not with variable. 
+1. abstract method : The method without body or without curly braces or incomplete methods 
+is known as abstract method. 
+	syntax 
+
+	abstract returnType methodName(parameterList);
+
+	abstract void speed();
+
+2. abstract class : if class contains abstract method then we have to declare the class as 
+a abstract class. 
+
+	syntax 
+
+	abstract class className {
+
+	}
+3. which ever class extends abstract class that class must be provide the body for all 
+abstract method belong to that class. That class can ignore only if that class itself is 
+a abstract class.
+
+4. abstract class we can't create the object. 
+
+5. abstract class can contains zero or 1 or all abstract methods. 
+
+abstract concept example 
+
+abstract class Bike {
+	abstract void speed();
+}
+class Pulsar extends Bike {
+	void speed(){
+		System.out.println("90km/hr");//method Overriding 
+	}
+	void color() {
+		System.out.println("REd");	
+	}
+}
+class HeroHonda extends Bike {
+	void speed(){
+		System.out.println("50km/hr");//method Overriding 
+	}
+	void color() {
+		System.out.println("Black");
+	}					
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Pulsar pu = new Pulsar();		
+	HeroHonda hh = new HeroHonda();
+	pu.color();		pu.speed();	
+	hh.color();		hh.speed();	
+	}
+}
+
+final keyword : final keyword we can use with variable, method and class. 
+
+1. final variable : if we want to declare constant in java we have to use final keyword. 
+
+	final int A=10;
+2. final method  If the method is final we can't Override that method. 
+
+3. final class : If the class is final we can't extends that class. 
+
+final example 
+
+final class Bike {
+	final void speed(){
+		System.out.println("60km/hr");
+	}
+}
+class Pulsar extends Bike {
+	/*void speed(){
+		System.out.println("90km/hr");//method Overriding 
+	}*/
+	void color() {
+		System.out.println("REd");	
+	}
+}
+
+class InheritanceDemo {
+	public static void main(String args[]) {
+	final int A=10;
+	System.out.println(A);
+	//A=20;
+	Pulsar pu = new Pulsar();
+	pu.speed();	
+	}
+}
+
+static : static keyword we can use with variable, method but not with class 
+(if class is inner class then we can use static keyword but not outer class).
+
+1. If variable is static we can assign the value through object as well as className.
+2. If method is a stati  we can call the method with the help of className class as well as objects. 
+3. Inside a non static method we can access static as well as no static variable direclty of class 
+variable. But inside a static method we can access only static varaible directly. 
+
+class Abc {
+	int a;
+	static  int b;
+	void dis1() {
+		System.out.println("Non static method");
+		System.out.println(a);
+		System.out.println(b);
+	}
+	static void dis2() {
+		System.out.println("static method");
+		//System.out.println(a);
+		System.out.println(b);
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Abc obj1 = new Abc();
+	obj1.a=10;
+	Abc.b=20;
+	obj1.b=30;	
+	obj1.dis1();
+	Abc.dis2();
+	obj1.dis2();
+	}
+}
+
+Another Static Example 
+
+class Abc {
+	int a;
+	static  int b;
+	void dis1() {
+		System.out.println(a);
+		System.out.println(b);
+	}
+	
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Abc obj1 = new Abc();
+	Abc obj2 = new Abc();
+	obj1.a=10;			//obj1 a 10
+	Abc.b=20;			//b=20
+	obj1.b=30;			//b=30
+	obj2.a=40;			//obj2 a=40
+	Abc.b=50;			//50
+	obj2.b=60;			//60
+	obj1.dis1();	//a=10	b=60
+	obj2.dis1();	//a=40	b=60
+	}
+}
+
+interface : interface is known as 100% pure abstract class(up to Java 7). 
+interface contains only abstrat method as well as final variables. 
+
+	syntax 
+
+	interface interfaceName {
+		fields;
+		methods;
+	}
+
+	By default all variable in interface are public, static and final. 
+
+	By default all methods are public and abstract. 
+
+	interface Abc {
+		int A=10;
+		void dis1();
+	}
+
+	Like a clas one interface can extends another interface. It can extends more than one interface. 
+	interface Mno {
+		int B=20;
+		void dis2();
+	}	
+	
+
+	interface Xyz extends Abc,Mno{
+		int C=30;
+		void dis3();
+	}
+
+	
+	Overriding access specifiers rules 
+
+	Super class/Interface  			Sub class 
+
+	public 					public 
+
+	protected 				public 
+						protected 
+
+	default(nothing)			public 
+						protected
+						default(nothing)
+
+	private 				can't override 
+
+		
+interface and class example 
+
+interface Abc {
+	int A=10;
+	public abstract void dis1();
+}
+interface Mno {
+	int B=20;
+	public abstract void dis2();
+}	
+interface Xyz extends Abc,Mno{
+	int C=30;
+	void dis3();
+}
+class Demo implements Abc,Mno {	//class can implements more than one interface. 
+	public void dis1() {
+		System.out.println("Abc interface method");
+	}
+	public void dis2() {
+		System.out.println("Xyz interface method");
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	Demo obj = new Demo();
+	obj.dis1();
+	obj.dis2();
+	}
+}
+
+
+super and this keyword with variable and methods. 
+
+class A {
+	int a=10;
+}
+class B extends A {
+	int a=20;
+	void dis1() {
+		int a=30;
+		System.out.println("a "+a);
+		System.out.println("a using this instance variable "+this.a);
+		System.out.println("a using this instance variable "+this.a);
+		System.out.println("a using super class variable "+super.a);
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	B obj1 = new B();
+	obj1.dis1();	
+	}
+}
+
+
+this() and super() 
+
+this() : this is use to achieve the constructor chaining of the same class. 
+It must be first statement inside a constructor. 
+
+class A {
+	A() {
+		this(10);
+		System.out.println("A()");	
+	}
+	A(int x) {
+		this(10,"ravi");
+		System.out.println("A(int)");
+	}
+	A(int x, String n) {
+		System.out.println("A(int,string)");
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	A obj1 = new A();		
+	}
+}
+
+super() : By default every sub class constructor first statement is super() which help to 
+call super class empty constructor (ie constructor chaining super class to sub class). 
+It must be the first statement inside a constructor of sub class. 
+
+
+class A {
+	A() {
+		System.out.println("A()");	
+	}
+	A(int x) {
+		System.out.println("A(int)");
+	}
+}
+class B extends A {
+	B(){
+		super(100);
+		System.out.println("B()");
+	}
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	B obj1 = new B();	
+	}
+}
+
+Run time polymoprhism using object creation. 
+
+class A {
+	void dis1() {
+		System.out.println("A class method");
+	}	
+}
+class B extends A {
+	void dis1() {
+		System.out.println("B class method - Override");
+	}
+	void dis2() {
+	System.out.println("B class method");	
+	}	
+}
+class InheritanceDemo {
+	public static void main(String args[]) {
+	A obj1 = new A();	
+	B obj2 = new B();	
+	A obj3 = new B();	//sub class object and super class reference possible, Runtime polymorphism
+	//B obj4 = new A();	// super class object and sub class reference not possible 
+	obj1.dis1();		// super class method 
+	obj2.dis1();		//override method 
+	obj2.dis2();		// B class method 
+	obj3.dis1();		// B class method - override 	
+	//obj3.dis2();		// no 	
+	// with the help of obj3 we can call only those method which belong to super class or override methods.
+	}
+}
+
+Super may be normal class or abstract class or interface. 
+Means we can create the reference of normal class or abstract class or interface with sub class 
+object. This concept is known as run time polymorphsim. 
+
+
+package : package is a collection of classes and interfaces. 
+
+In java packages are divided into 2 types 
+
+1. user-defined package 
+2. built-in package 
+
+					education 
+
+		shool					college 
+
+		Attedance 				Attedance 
+
+package is just a directoy or folder. 
+
+
+syntax 
+
+package packagename;
+
+This must be first statement in java program 
+
+package com;
+class InheritanceDemo {
+	public static void main(String args[]) {
+	System.out.println("Welcome to Userdefined package.");
+	}
+}
+
+compile the program using command as 
+
+javac className.java 
+
+then create the directory with packageName and copy/paste .class file 
+
+then run the application using command as 
+
+java packageName.classname 
+
+
+Day 3 : 01-09-20 
+
+	
+Access Specifiers :
+
+	4 types 
+
+	1. private 
+	2. default(nothing)
+	3. protected 
+	4. public 
+
+	private : we can use private for instance variable, static variable, non static method, 
+	static method, constructor but not with local variable and class. 
+	
+	scope : within a same class. 
+		
+	default : we can use with all.
+
+	scope : within a same package. 
+
+	protected :we can use protected for instance variable, static variable, non static method, 
+	static method, constructor but not with local variable and class. 
+	scope ; within same package as well as other package if class is sub class. 
+
+	public : we can use public for instance variable, static variable, non static method, 
+	static method, constructor as well as class but not with local variable.
+	scope : same package as well as other package. 
+
+	private constructor : if you don't want to create the object of your class directly. 
+	singleton design pattern. 
+
+	
+
+	pre-defined packages 
+
+	java						javax --extendiable 	root packages 
+
+	lang 						swing 
+	io 						net 
+	util 						sql 
+	awt 						servlet 
+	net 						ejb 
+	rmi 						jms 
+	sql 
+
+	etc 						etc
+
+	By default every java program import lang package 
+	By default every java program extends Object class. 
+
+	String class 
+	StringBuffer 
+	StringBuilder 
+
+	String : Combination of more than one character enclosed in double quotes. 
+	In Java string is a pre-defined class part of lang package. 
+
+	syntax 
+
+	String str1="Welcome to Java Training";
+
+	String str2 = new String("Welcome to Java Training");
+
+	
+	String is known as immutable class. 
+
+	immutable means we can't change. 
+
+	StringBuffer and StringBuilder is known as mutable string classes. 
+
+	StringBuilder by default method are synchronized , performance wise slow when we use 
+	multithreading concept. 
+
+	
+	Exception Handling :
+
+	Exception : Exception is object which occurs when unexpected or abnormal condition during 
+	the execution of a program. 
+	Using some technique we have to handle generated exception. 
+
+						java 
+
+	Compile time error 						Run time error 
+
+	syntax error 							run time error 
+
+							Error 			Exception 
+
+	Error and Exception both are pre-defined classes part of lang package. 
+
+	Error : The error which generated at the run time which we can't handle it. 
+	JVM Crash, Software or Hardware issue. 
+
+	Exception : It is a type of error which generate at the run time which we can handle it. 
+
+	divided by zero. 
+
+					Object 
+
+					Throwable 
+
+			Error 				Exception 
+
+
+
+					checked exception 			unchecked exception 
+					(type of exception)			(type of exception)
+
+
+					SQLException 				RuntimeException 
+					IOException
+					InteruptedException			ArithmeticException 
+									ArrayIndexOutOfBoundsException 
+					etc 				NumberFormatException 
+						
+
+		All unchecked exception are sub class RuntimeException class. 
+		
+		5 keywords 
+
+		try 
+		catch 
+		finally 
+		throw 
+		throws 
+
+				using this 5 keyword we can handle checked as well as 
+			unchecked exception. 
+
+
+		try catch block 
+
+		syntax
+
+		try {
+
+			
+		}catch(Exception e) {
+
+		
+		}
+
+		try with single catch block : If any exception generate if want to do common task. 
+		try with multiple catch blcok : For specific exception specific task. 
+
+		
+		try block : the code (one time or multiple code) which generate the exception.
+
+		catch block : It is known as exception solver block. If any exception generate that time 
+		only this block will execute. 
+
+		finally block : It is a type of block which execute 100% sure if any exception generate 	
+		or not. 
+
+		try with catch 
+
+		try with multiple catch 
+
+		try with single catch and finally 
+
+		try with multiple catch and finally 
+
+		try with finally (only one)
+
+		finally block is use to close the resources like database or file handling 
+
+		
+	throw : throw keyword is use to raise or generate pre-defined or user-defined exception 
+	depending upon the conditions. 
+
+	syntax 
+
+	throw new Exception();
+
+	or 
+
+	throw new ExceptionSubClass();
+
+
+	throws : throws keyword is use to throw the exception to caller methods. 
+
+	syntax 
+
+	returnType methodName(parameterList) throws Exception, ExceptionSubClass {
+
+	}
+
+	void display() throws Exception {
+
+	}
+
+	checked exception 
+
+	
+
+
+	Multithreading :
+
+	Program : Set of instruction to perform a specific task.  
+	Processor : Processor is responsible to execute the code. 
+	Process : time taken to execute the code or program in execution. 
+	Thread : Thread is small execution of a code within a process. 
+	Thread is also known as light weighted process. 
+
+	By default every java program execute default Thread. 
+
+	It is a part of main method. 
+
+	currentThread() is a pre-defined method part of Thread class belong to lang package. 
+
+	it is static method. 
+
+	Thread.currentThread();	The method return type is Thread class reference. 
+
+	Thread t = Thread.currentThread();
+
+		System.out.println(t);		Thread[main,5,main]
+
+			main ---> name of thread 
+			5---> priority of thread 
+			main ---> group of thread 
+
+			min -->1
+			norm -->5
+			max --> 10
+		
+
+	Multitasking : 
+
+	process base : C/++ 
+	thread base : Java 
+
+	
+
+	creating multithread 
+
+	1. extends Thread class 
+	2. implements Runnable interface 
+
+
+
+	synchronization : is use to block or lock or only one thread can use all resource at time. 
+
+
+	synchronized : 
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+	
+
+	
+	
+
+
+
+
+
+
+	
+
+
+
+
+	
