@@ -1384,9 +1384,215 @@ Access Specifiers :
 
 	
 
+	Day 5 : 3/9/20
+
+	Collection Framework (Data Structure in C/C++) 
+
+	int a;
+
+	a=10;
+
+	a=20;
+
+	array 
+
+	int abc[];
+
+	class Employee {
+		int id;
+		String name;
+		float salary;
+	}
 
 
+	Employee emp = new Employee();
+	emp.id=100;
+	emp.name="Ravi";
+	emp.salary = 12000;
 
+	array object 
+
+	syntax 
+
+	className objectRefName[]=new className[size];
+
+	Employee emps[]=new Employee[100];
+
+	zero object are created of Employee but array is one type of reference so 1 array object created. 
+
+	emps[0]=new Employee();
+	emps[1]=new Employee();
+
+	emps[0].id=100;
+	emps[1].id=101
+
+	Collection Framework contains set of classes and intrfaces which help to store collection of object or elements of any types
+	like int, float, String, User-defined class objects. 
+	In Collection framework provided dynamic memory at the run time base upon the requirements. 
+	It provided set of methods with the help of those methods we can addd, remove, search, iterate very easily. 
+	
+	collection framework classes and interfaces part of util package. 
+	
+	Collection Framework Hierarchy 
+
+					Collection ----interface 
+
+	List		Set		Queue		Map ---> interfaces. 
+
+	List, Set, Queue internally extends Collection interfaces but Map doesn't extends Collection. 
+
+	List : It allow duplicate elements. List maintains the order using index Position. 
+
+	Set : It doesn't allow duplicate elements. In Set few classes maintain order, some are unorder and some are sorted by default ascending. 
+	
+	Queue : FIFO (First In First Out). 
+
+	Map : May store the information in the form of key-value pairs. 
+	Where key is unique and value may be duplicate. 
+
+	List : below classes directly or indirectly implements List Interface. 
+		ArrayList :
+		Normal array we can store same type of value. 
+		But in ArrayList we can store different value. 
+		Normal array we have create the memory size while declaring the array. 
+		ArrayList memory get increase dynamically. 
+		In Between adding and removing elements from array very difficult. 
+		But in ArrayList they provided pre-defined which help to add and remove any elements 
+		in between. 
+		
+		LinkedList : 
+			In Java LinkedList by default consider as Double LinkedList consider. 
+			
+			Node : node is divided into three parts 
+				
+				1st part 	2nd part	3part 
+				
+			<------null             value           -------> Next Node 
+
+			If we can to add and remove elements again and again then LinkedList is good 
+			options. 
+			If we want to retrieve elements again and again ArrayList is good options. 
+			
+		Vector : Vector is known as legacy(old) class. 
+			By default vector class all methods a synchronized. 
+			
+		Stack : First In Last Out. 
+		
+
+	
+	Set : below classes directly or indirectly implements Set Interface. 
+		: All three classes doesn't allow duplicate 
+		HashSet		: Doesn't maintains order. 
+		LinkedHashSet	: Maintain the order. 
+		TreeSet 	: Sorted by default asc( so we have to store same type of value).
+
+		
+
+		
+
+	Queue : Below class directly or indirecty impelements Queue interface 
+
+		PriorityQueue : PriorityQueue retrieve the elements base upon the lower priority. 
+
+		
+
+	
+	Map : below classes directly or indirectly implements Map Interface. 
+		Store information in the form of key-value pairs. 
+		where key is unique and value may be duplicate. 
+		HashMap 		: Unorder 
+		LinkedHashMap		: Order 
+		TreeMap			:Asc order as a key 
+		Hashtable 		: legacy class. by default all methods are synchronized. 
+		
+
+		
+
+	Whenever we display any user-defined class in println method. Internally 
+	it will toString() belong to object. That class give details in the form of 
+	packageName.className@hashCode
+
+	But rather than that message if you want to display meaningful message then we have to 
+	override toString() method in that class. 
+
+	
+	Iterator : It is to move only forward direction 
+
+	ListIterator : It is use to move forward as well as backward direction. 
+
+	Collection framework generics. 
+
+	Collection framwework without generics : We can store any types of values. 
+	but while retrieving we have to keep track which position what type of values are present 
+	base upon the value we have to do type casting. 
+
+	CollectionFramework with Generics 
+
+	Syntax 
+
+	CollectionClassName<Type> obj = new CollectionClassName<Type>();
+
+	Type : May be Integer, Double, String or any defined class objects. 
+
+	It is like a homegeneous elements. 
+
+	Collection Framework with Complex Object : Employee, Customer,Order etc. 
+
+
+	file handling 		
+
+	Java 8 Features :
+
+	default methods and static methods in interface. 
+
+	functional interface. 
+
+	lambda expression or syntax 
+
+	Interface in Java 8 
+
+	From Java 8 onwards interface can contains methods with body. 
+	But the methods must be contains default and static keywords. 
+
+		
+	default method: 
+	1. the class which implements interface they can use same logic provided by default 
+	method belong to that interface. 
+	2. If they want, they can override default  methods. 
+	3. default method can access through object of that class which class implements that interface. 
+	
+	static method: 
+	1. static method can't override by class. 
+	2. static method of interface we have to call through interface name. 
+
+	Inner class: class within another class is known as inner class. 
+
+	1. non static inner class 
+	2. Anonymous innner class (no name)
+
+	Lambda Expression :  	
+
+	Using lambda exresspion we can achieve functional programming in java. 
+
+	we can write function with another function using lambda epxression. 
+
+	We can say lambda expression like anonymous inner function. 
+
+	We we want to use lambda expression. 
+	
+	The interface must be function interface. 
+
+	The interface contains only one abstract methods. 
+
+	It can contains more than one default or static methods. 
+
+	
+
+		
+		
+	
+
+	
 
 
 
