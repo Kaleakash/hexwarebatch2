@@ -1587,7 +1587,113 @@ Access Specifiers :
 	It can contains more than one default or static methods. 
 
 	
+	Stream API : Stream api is use to load the data from collection of classes on demand. 
+	Stream is temporary memory or temporary pipe help pass the data from source to target. 
 
+	Stream API internally use pre-defined functional interface with lambda expression. 
+
+	top functional interfaces 
+
+		java.util.stream.*;
+		java.util.function.*;
+		
+
+	1. Function : apply() : It takes T parameter and return R values. 
+	2. Consumer : accept() : It takes T parameter but no return type. 
+	3. Supplier : get() : It doesn't take any parameter but return R value. 
+	4. Predicate : test() : It takes T parameter and return boolean value. 
+
+	Stream API 
+
+	Source ------> Intermediate Operator ----------> Terminal Operator or methods. 
+			1, 2, 3,.......n 
+
+	Intermediate operator return type is stream itself. 
+
+	Termainal operator return type of non stream means void or boolean or int etc. 
+
+	
+	
+
+	JDBC and JDBI 
+
+	JavaDatabase Connectivity 
+	JavaDatabase Interface 
+
+	Both are used to interact with database(oracle or mysql) through Java technologies. 
+
+	JDBC is part of Java 
+	JDBI is third party API. 
+
+	Steps : 
+
+		1. Load the Driver : Driver is a pre-defined class provided by vendor(whose database going to connect 
+		) which help to connect the database.
+			
+			types of Driver 
+
+			1. type 1 : out dated from Java8 onwards. 
+					jdbc odbc bridge driver 
+			2. type 2 : jdbc native api driver 
+			3. type 3  ; jdbc net protocol driver 
+			4. type 4  : jdbc pure or thin driver. 
+
+			Class.forName("driverName");
+
+		2. Establish the connection : This step which help to connect the database. 
+
+		url, userName and password. 
+
+		Connection con = DriverManager.getConnection(url,userName,password);
+
+		3. 
+			a. If you are using JDBC, Create Statement, PreparedStatement or CallableStatement 
+				Statement is use to exeute only one query 
+				PreparedStatement is use to execute only one query with parameterized query 
+				concept. 
+				CallableStatement is use to call StoredProcedure or function from plsql. 
+				
+			b. If you are using JDBI we have to create JDBI reference. 		
+
+
+		This step help to create the reference. Which provided set of methods 
+		which help to do operation on database (table) through Java technologies. 
+
+		DML (Insert/Delete/Update)
+
+		4. 	DQL (Select Query)
+
+			a. In JDBC we have to take the help of ResultSet. 
+			b. In JDBI we have to take the help of ResultSetMapper 
+
+			ResultSet as well as ResetSetMap help to retrieve the records from database. 
+
+		5. close the resource properly.
+
+		
+
+		Type 4 Driver :  jdbc thin driver or pure driver 
+
+			MySQL Database 
+
+			MySQL Connector for type 4. 
+
+		With Maven or Gradle : 
+
+		Maven and Gradle is known as built tools. 
+
+		Main benefits of these tools help to download the dependencies base upon the project requirements. 
+
+		WithOut Maven or Gradle we have to download the those dependencies (jar files) manually. 
+
+					
+
+
+
+
+
+
+	
 		
 		
 	
