@@ -1686,6 +1686,14 @@ Access Specifiers :
 
 		WithOut Maven or Gradle we have to download the those dependencies (jar files) manually. 
 
+		According to JDBI as well as ORM (Hibernate /JPA)
+
+		Table must be map to JavaBean class 
+
+			TableName(Emp)------> JavaBean class(Emp)
+
+				columns ----->property (variables).
+
 					
 
 

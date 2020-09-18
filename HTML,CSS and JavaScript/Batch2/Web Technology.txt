@@ -1,0 +1,229 @@
+
+
+
+		Web Technologies 
+
+
+Core (J2SE/JavaSE/JSE) ---> Java Standard Edition 
+
+Standalone or Desktop Application. 
+
+J2EE(JavaEE/JEE) ------> enterprise Application 
+
+Java Enterprise Edition 
+
+Web Application 
+
+	CURL
+
+	https://www.google.com (browser) ---> GUI 
+
+
+		-------------Req(http/https)----------->	
+
+Client 							Server 
+
+		<--------Res(http/https)---------------
+
+							
+
+	http or https: hypertext transfer protocol.(secure)
+
+	www: world wide web 
+
+	google : domain 
+
+	com : commerical 					html/html5
+							css/css3
+							JavaScript 
+							1. it was 
+							mainly use to do validation 
+							on client side. 
+
+							Now way days 
+							we can do validation 
+							using 
+							JavaScript or HTML5 Features 
+					
+							JEE
+							Servlet/JSP/EJB 
+
+							JSP : Java Server Pages 
+							EJB : Enterprise Java Bean 
+		
+							Asp.net 
+								C# and Asp.net 
+							Php 
+
+							CGI 
+
+							Node JS 
+
+							Python 
+					
+	Server : 
+		2 types 
+	1. Web Server :
+	2. Application Server :
+	Servlet,JSP and ejb no main methods. 
+	
+	Container : Container is a part of server. It is also known as engine. It is responsible to execute 
+	Servlet, jSP and ejb application. It will call the life cycle of servlet, jsp and ejb application. 
+	It is responsible to load the class,  create the object, call life cycle method and destroy the objects. 
+	
+	Web Container : If server is a type of web server it contains only one type of container ie web container. 
+		Tomcat is a type of Web Server. 
+	Ejb container : If server is a type of application server it contains web container as well as ejb container 
+		ex : weblogic or jboss, glashfish etc. 
+
+	Web Server : Web Container : Servlet /JSP 
+
+	Application Server : Web Container : Servlet/JSP, EJB Container --> EJB + Extra Services 
+		like connection pooling, security, thread management, resource management etc. 
+
+	Web Service :
+
+	
+	  req(http/https) 			req (java)
+Client 			HDFC 		XML/JSON	HSBC or SBI 	
+	 res(http/https)	JEE		res(asp.net)	asp.net or python or php etc
+
+
+	EJB 	Vs 	Spring Boot or Spring Framework 
+
+
+	Java is pure object as well as platform independent programming language but language depedent. 
+
+		
+	Web Service : Web service is giving the service for web application when both application running 
+	using same or different technologies or same/different platform. 
+	Web Service is language independent, platform independent as well as browser independent. 
+
+	2 types 
+
+	1. SOAP Base Web Service : Simple Object Access Protocol
+			Which is base up SOA Architecutre (Service Oriented Architecture).
+			It is a standard 
+				We can send and recieve data only in the form of XML. 			
+	XML : eXtensible Markup Language : It is use to hold data or transfer the data from one technolgy to 
+		another technoloy. 
+		
+	2. RESTful Web Service : Expose your data in the form of service using any format 
+			like XML, JSON(JavaScript Object Notation), plain text, html, media format etc. 
+			JSON is a like map in Java. 
+			Light weighted. 
+	
+	1. JAX_RS : Java API for XML RestFull Web Service 
+			Using Jersey Tool 
+			Using any other tools like WAS, 
+			
+	2. Spring boot help to develop the Rest Full Web Service 			
+	
+	Service Provider or Producer 
+
+	Service Consumer : 	asp.net, php, python, node js, end user client, Angular or React JS 
+
+			there are client can invoke your web service. 
+
+			XML/JSON or any other format. 
+
+		http protocol four methods. 
+			CRUD Operation : Create, Read, Update and Delete 
+		get() 	: Read, retrieve the resources (select * from employees) with where clause 
+		post()	: Create, Store the resources (insert query) 
+		put()	: Update, Update the resource (Update query)
+		delete() 	: Delete , Delete the resources (Delete Query)
+
+		
+	HTML/HTML5
+
+	hypertext makup language : It is use to create web page that page may be static or dynamic web page. 
+	Web page is use to display the contents on browser in different format like color format, clips format, video 
+	etc. 
+
+	html provided lot of pre-defined tags or also known as elements. 
+
+	it is not a case sensitive. 
+	
+	tag sytax 
+
+		<tagName>		opening tag 
+
+		</tagName>		closing tag 
+
+		<tagName/>		self closing tag 
+
+		
+	1. html 
+
+			<html>
+				<head>
+
+				</head>
+
+				<body>
+
+				</body>
+			</html>	
+		
+
+	2. head 
+	3. body 
+	4. title 
+	5. p 
+	6. heading tags 
+		6 types 
+		h1 	largest 
+		to 	
+		h6	smallest 
+
+	7. break tag 
+
+	Attribute : Attribute is known as properties of a tags. 
+	Attribute we can use in the form of key-value pairs where value may be single quote or double quote or without quote 
+
+	syntax 
+
+	<tagName name1="value1" name2='value2' name3=value3>		</tagName>
+
+
+	xml : in xml value must be in single or quote quote. 
+
+	8. font : this tag is use to change color, face(style) and size. 
+	
+	9. hyperlink : This tag is use to connect one page to another page. 
+
+		a. external hyperlink 
+
+		<a href="pageName.html">text</a>
+
+		a --> anchor 
+
+		href --> hyperreference 
+
+	10. image tag 
+
+		<img src="imageName.png/gif/jpeg/jpg"/>
+
+	11. List tags 
+		a. unorder list 
+		b. order list 
+		c. definition list 
+
+	12. Tables tags 
+
+	         Employee Details 
+
+	EmpId	Name	Salary 
+	100	Ravi	12000
+	101	Ramesh	14000
+	102	Rajesh	16000
+
+	13. Forms tags 
+
+	forms up html4	
+		
+	<input type="text/password/radio/checkbox/button/submit/reset/file" />
+
+
+	html5 forms  					
