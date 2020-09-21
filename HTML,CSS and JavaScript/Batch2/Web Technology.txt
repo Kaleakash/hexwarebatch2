@@ -225,5 +225,410 @@ Client 			HDFC 		XML/JSON	HSBC or SBI
 		
 	<input type="text/password/radio/checkbox/button/submit/reset/file" />
 
+	<html>
+	<head>
+		<title>This is my simple web page</title>
+	</head>
 
-	html5 forms  					
+	<body>
+	<form action="demo.html" method="post">
+	<h2>Login Page</h2>
+	<label>UserName : </label>
+	<input type="text" name="uname"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname"/><br/>
+	<label>Age:</label>
+	<input type="text" name="page"/><br/>
+	<input type="button" value="Sign In!"/>
+	<input type="submit" value="Sign In!"/>
+	<input type="reset" value="Clear Info"/>
+	</form>
+	</body>
+</html>
+
+	HTML4 or HTML5 forms tags only support get or post methods. It doesn't support put and delete methods. 
+
+	But if you want to call put or delete method then we have to use 
+	AJAX, RestFull Client may be java, asp.net, python
+	Angular or React JS 
+
+	
+
+	html5 forms  	
+
+	CSS : Cascadding Style Sheet :
+
+	CSS provide set of properties which help to apply good look and 
+	feel for the web application. 
+	With the help of CSS we can make separation of concern. 
+
+	Actual contents 
+	formatting style we can make separate. 
+
+	Types of CSS 
+
+	1. Inline CSS 
+	2. Internal CSS or embedded CSS
+	3. External CSS
+
+	Inline CSS 
+
+	<tagName style="property:value"></tagName>
+
+	<tagName style="property:value;property:value;property:value;"></tagName>	
+
+
+	p,h1 to h6, div, span, body, table, tr etc 
+
+	2. Internal CSS 
+
+	syntax 
+
+	<style>
+		selector {property:value;property:value}
+	</style>
+	in between head tag 
+
+
+	types of selector 
+	1. Universal Selector 
+
+	* : all tags 
+		*{color:orange}
+
+	2. specific selector 
+
+	tagName like p, h1, h6, b etc 
+		
+		p{color:orange}
+		h1{color:green}
+		
+	3. multispecific selector 
+
+	p,h1{color:orange}
+
+	4. class selector (local class selector)
+
+	p.abc{color:orange}
+	p.xyz{color:blue}
+
+	<p class="abc">Welcome to HTMl Web Page</p>
+	<p class="xyz">Welcome to HTMl Web Page</p>
+
+	5. global class selector 
+
+	.mno{color:yellow}
+
+	<p class="mno"></p>
+
+	<div class="mno"></div>	
+
+	6. id selector 
+
+	#idName{property:value}
+
+	class means group of the tags. Id must be unique. 
+
+	<p class="abc" id="p1">One</p>
+	<p class="abc" id="p2">Two</p>
+	<p class="abc" id="p3">Three</p>
+			
+	#b1{background-color:orange}
+
+	<b id="b1">This is bold tag</b>
+
+	JavaScript (ES5): ECMA Script 
+
+	JavaScript was object based interpreter scripting language utpo ES5. 
+
+	Using JavaScript we can create dynamic web application as well as 
+	we can do client side validation. 
+		
+	syntax 
+
+	<script type="text/JavaScript" Language="JavaScript">		opening tag 
+
+	</script>				closing tag 
+
+	This tag we can write in between head tag or body tag or without any tags. 
+	
+
+	JavaScript doesn't require every statement end with semicolon.
+	JavaScript is a case sensitive. 
+	HTML tags inside a JavaScript must be in double quote. 
+
+	Simple Program in JavaScript 
+
+<html>
+	<head>
+	<script type="text/JavaScript">
+	document.write("Welcome to JavaScript from head tag")
+	</script>
+	</head>
+
+	<body>
+	<h1>This is web page</h1>
+	<script type="text/JavaScript">
+		document.write("Welcome to JavaScript from body tag<br/>")
+		document.write("Welcome to JavaScript from body tag<br/>")
+		document.write("Welcome to JavaScript from body tag")
+	</script>
+	</body>
+</html>
+
+To declare the variable in JavaScript we have to use var keywords. 
+
+	var variableName;
+
+	JavaScript doesn't provide strict data types base upon the what type of value we store it behave that type of 
+	data types. 
+
+	In JavaScript data types are divided into 5 types 
+
+	1. undefined 
+	2. number 
+	3. string 
+	4. boolean 
+	5. object reference. 
+
+Second Example 
+
+<html>
+	<head>
+	
+	</head>
+
+	<body>
+	
+	<script type="text/JavaScript">
+	var fname;
+	var lname="Deep";	
+	var a=10;
+	var b=10.10;
+	var res = true;
+	var obj = new Date();
+	document.write("<br>Value of fname "+fname);
+	document.write("<br>Value of lname "+lname);
+	document.write("<br>Value of a "+a);
+	document.write("<br>Value of b "+b);
+	document.write("<br>Value of res "+res);
+	document.write("<br>Value of obj "+obj);
+	</script>
+	</body>
+</html>
+
+	Operator 
+	1. +, -,*,%
+	2. >,>=,<,<=,
+	3 = 	
+	4. ==
+		5. ===
+	6. && as well as || and !
+		7. typeof 
+
+	== it check only value 
+	=== it check value as well as their data types. 
+
+	<html>
+	<head>
+	
+	</head>
+
+	<body>
+	
+	<script type="text/JavaScript">
+	var a=10;
+	var b="10";
+	document.write("== <br/>")
+	document.write(a==b)
+	document.write("<br/>")
+	document.write("=== <br/>")
+	document.write(a===b)
+	document.write("<br/>")	
+	</script>
+	</body>
+</html>
+
+
+	
+	typeof example 
+
+	<html>
+	<head>
+	
+	</head>
+
+	<body>
+	
+	<script type="text/JavaScript">
+	var a;
+	document.write("<br> "+typeof(a))
+	a=10.10
+	document.write("<br> "+typeof(a))
+	a=true
+	document.write("<br> "+typeof(a))
+	a ="Ravi"
+	document.write("<br> "+typeof(a))
+	</script>
+	</body>
+</html>
+
+
+	if statement 
+
+	switch statement 
+
+	looping 
+		while loop
+		do while loop 
+		for loop 
+
+	function and events. 
+
+	functions : it is use to write set of instruction to perform specfic task. 
+
+	user-defined functions. 
+	pre-defined functions 
+
+	alert("Welcome to JavaScript");
+
+
+	function example 
+
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function info() {
+		//document.write("Welcome")
+		alert("Welcome to JavaScript")
+	}
+	function addNumber(a,b) {
+		var sum = a+b;
+		alert("Sum of two number is "+sum);
+	}
+	function empInfo(id,name,salary) {
+		return salary+5000;
+	}
+	</script>	
+	</head>
+
+	<body>
+	<script type="text/JavaScript">
+	info();
+	addNumber(100,200);
+	var updatedSalary = empInfo(1,"Ravi",12000);
+	alert("Salary of employee is "+updatedSalary);
+	</script>	
+	</body>
+</html>
+
+
+	events : it is known as delegation model.
+	event is a interaction between user and components(html tags like p, button, textfield etc).
+
+	event provide bridge between html and javaScript code. 
+
+	type of events 
+	all events start with on pre-fix followed by event name 
+
+	onClick 
+	onDblClick 
+	onMouseOver
+	onMouseOut
+	onKeyUp
+	onKeyDown
+	onSubmit
+	onChange
+	onBlur
+	onFocus 
+	
+	etc 
+
+
+	
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function info() {
+		alert("Welcome to JavaScript")
+	}	
+	</script>	
+	</head>
+
+	<body>
+	<input type="button" value="Click Here" onClick="info()"/>	
+	</body>
+</html>
+
+	
+	
+	Validation Using JavaScript and HTML5 
+
+	
+	DOM : Document Object Model 
+
+DOM providing set of properties and function which help to read tag value, update tag values or write the value. 
+	
+
+	<!doctype HTML>
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function validate() {
+	var name = document.getElementById("u1").value;
+	var pass = document.getElementById("p1").value;
+		if(name.length==0) {
+		alert("User name is required");
+		return false;
+		} else if(pass.length==0) {
+		alert("Password is required")
+		return false;
+		}else {
+		return true;
+		}
+	}	
+	</script>	
+	</head>
+	<body>
+	<h2>Login Page Validation Using JavaScript</h2>
+	<form action="home.html" onSubmit="return validate()">
+	<label>UserName:</label>
+	<input type="text" name="uname" id="u1"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" id="p1"/><br/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	<br/>
+	<h2>Login Page Validation Using HTML5</h2>
+	<form action="home.html" >
+	<label>UserName:</label>
+	<input type="text" name="uname" required="true" minlength="2"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" required="true"/><br/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	<br/>
+	<h2> Application Page</h2>
+	<form action="home.html" >
+	<label>PhNumber</label>
+	<input type="number" name="phnumber" required="true"/><br/>
+	<label>Email</label>
+	<input type="email" name="email" required="true"/><br/>
+	<label>URL</label>
+	<input type="url" name="url" required="true"/><br/>
+	<label>CompanyCode</lable>
+	<input type="text" name="cc" required="true" pattern="HX\d{3}"/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	</body>
+</html>
+
+
+
+
+
+
+	

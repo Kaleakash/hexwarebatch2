@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+	<head>
+	<script type="text/JavaScript">
+	function validate() {
+	var name = document.getElementById("u1").value;
+	var pass = document.getElementById("p1").value;
+		if(name.length==0) {
+		alert("User name is required");
+		return false;
+		} else if(pass.length==0) {
+		alert("Password is required")
+		return false;
+		}else {
+		return true;
+		}
+	}	
+	</script>	
+	</head>
+	<body>
+	<h2>Login Page Validation Using JavaScript</h2>
+	<form action="home.html" onSubmit="return validate()">
+	<label>UserName:</label>
+	<input type="text" name="uname" id="u1"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" id="p1"/><br/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	<br/>
+	<h2>Login Page Validation Using HTML5</h2>
+	<form action="home.html" >
+	<label>UserName:</label>
+	<input type="text" name="uname" required="true" minlength="2"/><br/>
+	<label>Password:</label>
+	<input type="password" name="pname" required="true"/><br/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	<br/>
+	<h2> Application Page</h2>
+	<form action="home.html" >
+	<label>PhNumber</label>
+	<input type="number" name="phnumber" required="true"/><br/>
+	<label>Email</label>
+	<input type="email" name="email" required="true"/><br/>
+	<label>URL</label>
+	<input type="url" name="url" required="true"/><br/>
+	<label>CompanyCode</lable>
+	<input type="text" name="cc" required="true" pattern="HX\d{3}"/>
+	<input type="submit" value="submit">
+	<input type="reset">
+	</form>
+	</body>
+</html>
